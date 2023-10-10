@@ -37,12 +37,11 @@ var cronometro = setInterval(function() {
 		clearInterval(criaMosquito)
 		window.location.href = 'vitoria.html'
 	} else {
-	document.getElementById('cronometro').innerHTML = tempo
+	document.getElementById('cronometro').innerHTML = tempo // A instrução innerHtml significa dentro da tag HTML
 	}
 }, 1000)
 
 function posicaoRandomica() {
-
 
 	// Remover o mosquito anterior (caso exista)
 	if(document.getElementById('mosquito')) {
@@ -78,6 +77,8 @@ function posicaoRandomica() {
 
 	// Criando um id para retirar o mosquito da tela antes da criação automática de um novo
 	mosquito.id = 'mosquito'
+
+	// Criando a função que remove os mosquitos com o clique
 	mosquito.onclick = function() {
 		this.remove()
 	}
