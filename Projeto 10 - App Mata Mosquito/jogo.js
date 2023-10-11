@@ -3,9 +3,9 @@ var altura = 0
 var largura = 0
 var vidas = 1
 var tempo = 15
-
 var criaMosquitoTempo = 1500
 
+// Criando os níveis de dificulade do jogo
 var nivel = window.location.search
 nivel = nivel.replace('?', '')
 
